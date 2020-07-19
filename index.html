@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+    </header>
+    <section id="home">
+        <div>
+            <div class="home-welcome">
+                <span>Chez nous vous retrouvez de bons composants éléctroniques.</span>
+                <button id="promo" onclick="popUpFunction()">Beneficiez d'une offre!</button>
+            </div>
+        </div>
+
+        <div class="pop-up-align-relative">
+        
+            <div class="pop-up-close">
+                <img src="close.svg" id="click-to-close" onclick="popUpClose()">
+            </div>
+
+            <div class="pop-up-top-flex">
+                    <h1>Réduction premier achat</h1>
+                    <p>Pour votre premier achat : obtenez 20% de réduction !</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>J'en profite</button></a>
+                </div>
+            
+        </div>
+    </section>
+<script>
+
+function popUpFunction() {
+    document.querySelector('.pop-up-align-relative').style.display = 'block';
+}
+
+function popUpClose() {
+    document.querySelector('.pop-up-align-relative').style.display = "none";
+}
+</script>
+</body>
+</html>
+
